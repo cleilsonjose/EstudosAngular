@@ -1,0 +1,37 @@
+<h2>Diretivas Estruturais</h2>
+<h4>ngIF</h4>
+
+<p *ngIf="condition; else elseBlock">True</p>
+
+<ng-template #elseBlock>
+  <p>False</p>
+</ng-template>
+<hr>
+<p *ngIf="condition2">True</p>
+
+<p *ngIf="!condition2">False</p>
+
+<button (click)="clicar()">Clicar</button>
+<hr>
+<br>
+<h4>ngFor</h4>
+<p>Adcione uma banda</p>
+<input [(ngModel)] = umaBanda>
+<button (click)="clicarAddBandas()">Clicar</button>
+
+<ul>
+  <li *ngFor="let banda of bandas; let i = index">{{i}}-{{banda}}</li>
+</ul>
+
+<hr>
+<h2>ngSwitch</h2>
+<div [ngSwitch]="pokemon">
+  <p *ngSwitchCase ="'Charmander'">
+    Charmander
+  </p>
+  <p *ngSwitchCase ="'picachu'">
+    Picachu
+  </p>
+</div>
+
+<hr>

@@ -25,12 +25,17 @@
 
 <hr>
 <h2>ngSwitch</h2>
+<input type="text" [(ngModel)] = "pokemon">
+
 <div [ngSwitch]="pokemon">
   <p *ngSwitchCase ="'Charmander'">
     Charmander
   </p>
   <p *ngSwitchCase ="'picachu'">
     Picachu
+  </p>
+  <p *ngSwitchDefault>
+    pokemon não encontrado
   </p>
 </div>
 

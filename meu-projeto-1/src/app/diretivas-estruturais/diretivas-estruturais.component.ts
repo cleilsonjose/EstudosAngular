@@ -10,7 +10,8 @@ export class DiretivasEstruturaisComponent implements OnInit {
   public condition2: boolean = true;
   public bandas: string[] = ['cefa', 'fresno', 'matanza', 'huaska'];
   public umaBanda: string = "";
-
+  //switch
+  public pokemon:string = 'Charmander';
 
   constructor() {
     //
@@ -37,7 +38,6 @@ export class DiretivasEstruturaisComponent implements OnInit {
   public clicarAddBandas(){
     this.bandas.push(this.umaBanda);
   }
-  //switch
-  public pokemon:string = 'Charmander';
+
 
 }

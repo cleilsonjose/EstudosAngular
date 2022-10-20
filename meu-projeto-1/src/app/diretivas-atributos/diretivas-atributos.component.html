@@ -7,8 +7,17 @@
   <p>teste</p>
 </div>
 
-<div [ngStyle]="{'height':heightPx, 'background': backgroundColor}">
+<div [ngStyle]="{'height':heightPx, 'background': backgroundColor,'color': colorFonte}">
   <h2>ngStyle</h2>
   <p>Alguma coisa</p>
+</div>
+
+<div >
+  <h2>ngModel</h2>
+  <input type="text" [(ngModel)] = nome>
+  <button (click)="salvar()">Salvar</button>
+  <ul class="active">
+    <li *ngFor="let item of list">{{item.nome}}</li>
+  </ul>
 </div>
 

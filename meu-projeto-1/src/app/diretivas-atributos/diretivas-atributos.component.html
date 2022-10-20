@@ -1,8 +1,14 @@
 <h1>Diretivas Atributos</h1>
 
 <div [ngClass]="{'active':valor, 'disabled':!valor}">
+  <h2>ngClass</h2>
   <button (click)="dark()">Modo Dark</button>
   <h4>ngClass</h4>
   <p>teste</p>
+</div>
+
+<div [ngStyle]="{'height':heightPx, 'background': backgroundColor}">
+  <h2>ngStyle</h2>
+  <p>Alguma coisa</p>
 </div>
 

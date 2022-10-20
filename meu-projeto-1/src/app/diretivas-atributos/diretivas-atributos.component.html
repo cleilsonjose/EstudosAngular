@@ -1,4 +1,4 @@
-<h1>Diretivas Atributos</h1>
+<ng-content select="h1"></ng-content>
 
 <div [ngClass]="{'active':valor, 'disabled':!valor}">
   <h2>ngClass</h2>
@@ -20,4 +20,14 @@
     <li *ngFor="let item of list">{{item.nome}}</li>
   </ul>
 </div>
+
+<h2>ngTemplate</h2>
+<ng-template ngFor let-item [ngForOf] = "list2">
+
+  <ul>
+    <li>{{item.nome}}</li>
+  </ul>
+</ng-template>
+
+<ng-content select="h3"></ng-content>
 

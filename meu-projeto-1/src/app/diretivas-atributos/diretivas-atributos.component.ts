@@ -17,6 +17,7 @@ export class DiretivasAtributosComponent implements OnInit {
   //ngModel
   public nome:string = "";
   public list: Array<{nome: string}> = [];
+  public list2: Array<{nome: string}> = [{nome:"Cleilson"},{nome:"Juliana"}];
 
   constructor() {
     //
@@ -29,11 +30,11 @@ export class DiretivasAtributosComponent implements OnInit {
         this.colorFonte = "#e1e1e1";
         if(this.red == 255){
           while(this.blue != 255){
-            this.blue+=5;
+            this.blue+=25;
             ++this.green;
           }
         }else{
-          this.red+=5;
+          this.red+=25;
         }
 
         this.backgroundColor = `rgb(${this.red},${this.green},${this.blue})`
@@ -43,7 +44,7 @@ export class DiretivasAtributosComponent implements OnInit {
         this.colorFonte = "#1e1e1e";
       }
 
-    },1000)
+    },10000)
 
   }
 

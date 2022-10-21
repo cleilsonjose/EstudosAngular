@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
     <app-title></app-title>
     <app-data-biding></app-data-biding>
     <app-diretivas-estruturais></app-diretivas-estruturais>
-  -->
+
     <app-diretivas-atributos>
       <h1>Diretivas Atributos</h1>
       <h3>Fim do ng-content</h3>
     </app-diretivas-atributos>
+    -->
+    <app-new-component></app-new-component>
     <router-outlet></router-outlet>
   `,
 })

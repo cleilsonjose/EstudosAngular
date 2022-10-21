@@ -25,7 +25,8 @@
 <ng-template ngFor let-item [ngForOf] = "list2">
 
   <ul>
-    <li>{{item.nome}}</li>
+    <!--pipes são "|" e que vc quer fazer, colocar todo o texto em maiusculo-->
+    <li>{{item.nome | uppercase}}</li>
   </ul>
 </ng-template>
 

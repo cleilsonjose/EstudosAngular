@@ -1,0 +1,7 @@
+<hr>
+<h1>OutPut</h1>
+
+<p *ngFor="let pokemon of pokemons; let i = index">
+  {{pokemon.nome}} - {{pokemon.type}}
+  <button (click)="getDados(i)">Add</button>
+</p>

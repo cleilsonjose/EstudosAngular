@@ -1,27 +1,40 @@
-# AppTodo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+<h1 align="center"> To-do List </h1>
+## Criar um modulo home, na pasta modules
 
-## Development server
+```
+ng g m modules/home
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Declare o export class HomeModule { } como HomeModule, no imports do app.module.ts
 
-## Code scaffolding
+## Pages
+ <p>Criar uma pasta 'pages' e dentro dela o componente Home</p>
+ 
+```
+ng g c  modules/home/pages/home
+```
+<p>No arquivo app-routing.module.ts crie uma rota para a pagina home, é só add o código abaixo na const routes, a qual recebe um objeto </p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+{ path:"", component: HomeComponent }
+```
 
-## Build
+## Componentes 
+<p>Vamos criar os componentes que vamos usar na nossa aplicação</p>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+ng g c modules/home/componets/header
+```
 
-## Running unit tests
+```
+ng g c modules/home/componets/todoList
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+ng g c modules/home/componets/todoInputAddItens
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+ng g c modules/home/componets/todoButtoonDeleteAll
+```

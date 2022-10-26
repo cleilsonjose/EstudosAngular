@@ -8,7 +8,8 @@ import { TaskList } from '../../model/task-list';
 })
 export class TodoListComponent implements OnInit {
   public taskList: Array<TaskList> = [
-    {task:"essa task", checked:true}
+    {task:"essa task", checked:true},
+    {task:"essa task 2", checked:false}
   ];
   constructor() {
     //
@@ -19,5 +20,9 @@ export class TodoListComponent implements OnInit {
   }
   public deleteItemTaskList(event: number){
     this.taskList.splice(event, 1);
+  }
+
+  public deleteAllTaskList(){
+    this.taskList = [];
   }
 }

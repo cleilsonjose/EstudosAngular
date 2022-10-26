@@ -38,3 +38,13 @@ ng g c modules/home/componets/todoInputAddItens
 ```
 ng g c modules/home/componets/todoButtoonDeleteAll
 ```
+
+## todoList
+
+<p>Importe o FormsModule no home.modules.ts</p>
+```
+imports: [
+    CommonModule,
+    FormsModule
+  ]
+```

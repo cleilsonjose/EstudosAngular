@@ -7,7 +7,9 @@ import { TaskList } from '../../model/task-list';
   styleUrls: ['./todo-list.component.scss']
 })
 export class TodoListComponent implements OnInit {
-  public taskList: Array<TaskList> = [];
+  public taskList: Array<TaskList> = [
+    {task:"essa task", checked:true}
+  ];
   constructor() {
     //
   }
@@ -15,5 +17,7 @@ export class TodoListComponent implements OnInit {
   ngOnInit(): void {
     //
   }
-
+  public deleteItemTaskList(event: number){
+    this.taskList.splice(event, 1);
+  }
 }
